@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" href="img/logo.jpeg">
+    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+    <title>Roberton Portfolio</title>
+    <!-- box icon css -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .services-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        /* Adjust the gap between service boxes */
+    }
+
+    .service-box {
+        flex: 1 1 30%;
+        /* Adjust the flex-basis percentage to control the width */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: 100%;
+        /* Ensure all boxes have equal height */
+    }
+
+    .service-box i {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .service-box h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .service-box p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .lrnMr-btn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .lrnMr-btn:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+
+<body>
+    <main id="main_smt">
+        <!-- header of website -->
+        <header class="header">
+            <a href="#" class="logo">My Portfolio<span class="animate" style="--i:1;"></span></a>
+
+            <i class='bx bx-menu' id="menu"><span class="animate" style="--i:2;"></span></i>
+
+            <nav class="navbar">
+                <a href="#home-section" class="home">Home<span class="animate" style="--i:2;"></span></a>
+                <a href="#about" class="about">About<span class="animate" style="--i:2;"></span></a>
+                <a href="#education-section" class="education">Education<span class="animate" style="--i:2;"></span></a>
+                <!-- <a href="#skills" class="skill">Skills<span class="animate" style="--i:2;"></span></a> -->
+                <a href="#services-section" class="services">Skills<span class="animate" style="--i:2;"></span></a>
+                <a href="#portfolio" class="portfolioo">Portfolio<span class="animate" style="--i:2;"></span></a>
+                <a href="#contact" class="contactt">Contact<span class="animate" style="--i:2;"></span></a>
+
+                <!-- <span class="active-nav"></span> -->
+
+                <span class="animate" style="--i:2;"></span>
+            </nav>
+        </header>
+
+        <main>
+            <!-- home section -->
+            <section class="home-section show-animate" id="home-section">
+                <div class="home-content">
+                    <h4>Hi<span class="animate" style="--i:2;"></span></h4>
+                    <h3>It's Me<span class="animate" style="--i:2;"></span></h3>
+                    <h2>Roberton<span class="animate" style="--i:3;"></span></h2>
+                    <h3>I am a <span id="multiple-text"></span><span class="animate" style="--i:4;"></span></h3>
+                    <p>
+                        Third-year Computer Technology Students at Del Institute of Technology with strong skills in
+                        programming,
+                        operating system, IoT and computer networking. Experienced in analyzing, designing, and
+                        implementing efficient
+                        systems to meet evolving technologies needs. Passionate about tackling IT challenges and
+                        contributing to innovative technology
+                        project.
+                        <span class="animate" style="--i:5;"></span>
+                    </p>
+                    <div class="social-media">
+                        <a href="#" target="_blank"> <i class='bx bxl-facebook'> </i> </a>
+                        <a href="#" target="_blank"> <i class='bx bxl-instagram'> </i></a>
+                        <a href="#" target="_blank"> <i class='bx bxl-twitter'> </i></a>
+                        <a href="#" target="_blank"> <i class='bx bxl-youtube'></i></a>
+                        <a href="www.linkedin.com/in/roberton-manurung-265574275" target="_blank"> <i
+                                class='bx bxl-linkedin'> </i></a>
+                        <a href="https://github.com/RobertonManurung" target="_blank"> <i class='bx bxl-github'>
+                            </i></a>
+                        <a href="#" target="_blank"> <i class='bx bxl-codepen'>
+                            </i></a>
+                        <a href="#" target="_blank"> <i class='bx bxl-gmail'> </i></a>
+                        <span class="animate" style="--i:6;"></span>
+                    </div>
+                    <div class="btn-box">
+                        <a href="img/CV_Roberton Manurung.pdf" download="Nilkantha Dwibedi's Resume" id="dload-cv"
+                            class="dload-bt ">Download CV</a>
+                        <a href="#contact" id="dload-cv" class="dload-bt ">Let's Talk</a>
+                        <span class="animate" style="--i:7;"></span>
+                    </div>
+
+                </div>
+                <div class="my-home-img">
+                    <img src="img/berton.jpeg" alt="my img">
+                    <span class="animate" style="--i:7;"></span>
+                </div>
+            </section>
+
+            <!-- about section -->
+            <section class="about-section show-animate" id="about">
+                <div class="about-img">
+                    <img src="img/roberton.jpeg" alt="">
+                    <!-- <span class="animate scroll" style="--i:1;"></span> -->
+                </div>
+                <div class="about-content">
+                    <h2 class="heading">About
+                        <span>Me</span>
+                        <!-- <span class="animate scroll" style="--i:1;"></span>s -->
+                    </h2>
+                    <h3>Student
+                        <!-- <span class="animate scroll" style="--i:2;"></span> -->
+                    </h3>
+                    <p>Roberton Manurung is a third-year student in the D3 Computer Engineering Study Program at the Del
+                        Institute of Technology, with a keen interest in computer network engineering, Internet of
+                        Things (IoT), embedded systems, and software development. Originally from Lumban Julu, Toba,
+                        North Sumatra, he has a passion for facing IT challenges and contributing to innovative
+                        technology projects.
+
+                        Roberton has developed his technical skills through various projects, including WAN network
+                        configuration, IoT sensor-based device development, mechanism design using SolidWorks, and web
+                        application development with front-end technologies such as HTML, CSS, and JavaScript. He is
+                        also experienced in using automation tools such as Ansible for server management, which shows
+                        his ability in system management efficiency.
+
+                        In addition to academic achievements, Roberton is also active in organizations such as Del Cyber
+                        ​​​​Security and BEM IT Del, where he has honed his leadership, collaboration, and event
+                        management skills. The Capture The Flag (CTF) competition he participated in reflected his
+                        ability to think analytically and solve problems in the field of digital security.
+
+                        With a combination of strong technical skills, relevant project experience, and soft skills such
+                        as communication, adaptability, and collaboration, Roberton is ready to make a positive impact
+                        in the world of technology and computer engineering.
+                        <!-- <span class="animate scroll" style="--i:3;"></span> -->
+                    </p>
+                    <div class="btn-boxlol">
+                        <a href="#education-section" class="lrnMr-btn dload-btn">Learn More </a>
+                        <!-- <span class="animate scroll" style="--i:4;"></span> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- education section -->
+            <section class="education-section" id="education-section">
+                <h2 class="heading">My
+                    <span>Journey</span>
+                    <!-- <span class="animate scroll" style="--i:1;"></span> -->
+                </h2>
+                <div class="education-row">
+                    <div class="education-column">
+                        <h3 class="title">Education
+                            <span class="animate scroll" style="--i:1;"></span>
+                        </h3>
+
+                        <div class="education-box">
+
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bxs-calendar'></i>Jul 2019 - May 2022</div>
+                                    <h3>SMK N 1 Lumbanjulu</h3>
+                                    <p>High School Diploma focused on learning computer assembly, identifying hardware
+                                        components, and basic networking. Completed a
+                                        project building a LAN network using Mikrotik.</p>
+                                </div>
+                            </div>
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bxs-calendar'></i>Aug 2022 - Present</div>
+                                    <h3>Institut Teknologi Del </h3>
+                                    <p>Diploma III – Network Engineering, Studying computer-related fields, such as:
+                                        Computer networking, Internet of Things, Programming,
+                                        Information security, Web development, and virtualization.</p>
+                                </div>
+                            </div>
+
+                            <span class="animate scroll" style="--i:3;"></span>
+
+                        </div>
+                    </div>
+
+                    <div class="education-column">
+                        <h3 class="title">Organizational Experience
+                            <span class="animate scroll" style="--i:1;"></span>
+                        </h3>
+
+                        <div class="education-box">
+
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bxs-calendar'></i>Sep 2023 - Present </div>
+                                    <h3>Del Cyber Security - Member </h3>
+                                    <p>Enhanced teamwork and coordination in tackling challenges in the digital security
+                                        field.
+                                        & Participated in Capture The Flag (CTF) competitions to hone analytical and
+                                        problem-solving skills.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bxs-calendar'></i>Sep 2023 - Present</div>
+                                    <h3>Sport Department BEM IT Del - Member </h3>
+                                    <p>The Sports Department is part of the IT Del Student Executive Board (BEM) which
+                                        focuses on developing students' sports interests
+                                        and talents. This department organizes various sports activities and
+                                        competitions to improve health, fitness, and the spirit of
+                                        sportsmanship in the campus environment. </p>
+                                </div>
+                            </div>
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bxs-calendar'></i>Oct 2022 - Sep 2024
+                                    </div>
+                                    <h3>D3 Computer Technology Student Association – Competition Division </h3>
+                                    <p>The Competition Division focuses on internal activities, aiming to develop
+                                        students' skills and potential in technology through various
+                                        internal competitions and training. We organize competitions and workshops to
+                                        improve technical skills, strengthen competitive spirit,
+                                        and strengthen relationships between members. With these activities, we strive
+                                        to create an environment that supports the development
+                                        of students' abilities in technology as a whole within the study program. </p>
+                                </div>
+                            </div>
+                            <span class="animate scroll" style="--i:3;"></span>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- skills section -->
+
+            <!-- akhir skill -->
+            <!-- services section -->
+            <section class="services-section" id="services-section">
+                <h2 class="heading">My
+                    <span>Skills</span>
+                    <!-- <span class="animate scroll" style="--i:1;"></span> -->
+                </h2>
+
+                <div class="services-content">
+                    <div class="service-box">
+                        <i class='bx bxs-network-chart'
+                            style="width: 100%; height: auto; object-fit: cover; border-radius: 8px;"></i>
+                        <h3>Network Engineering</h3>
+                        <p>Experienced in designing and managing networks using technologies like WAN (Wide Area
+                            Network) for large-scale connectivity and LAN (Local Area Network) for local communication.
+                            Proficient in routing protocols such as EIGRP (Enhanced Interior Gateway Routing Protocol)
+                            and OSPF (Open Shortest Path First) for efficient data delivery.
+                            Skilled in NAT (Network Address Translation) to enhance network security and optimize IP
+                            address allocation.
+                            Competent in using Cisco Packet Tracer for network simulation, troubleshooting, and testing
+                            solutions.</p>
+                        <a href="https://github.com/RobertonManurung" target="_blank" class="lrnMr-btn dload-btn">Learn
+                            More</a>
+                    </div>
+                    <div class="service-box">
+                        <i class='bx bxs-server'
+                            style="width: 100%; height: auto; object-fit: cover; border-radius: 8px;"></i>
+                        <h3> Virtualization</h3>
+                        <p>In-depth knowledge of virtual operating systems like Ubuntu Linux, Kali Linux, CentOS, as
+                            well as popular virtualization platforms such as VMware, VirtualBox, and Docker.
+                            Implementing virtualization to create flexible and efficient testing environments without
+                            affecting the main system.
+                            Experienced in Docker for container management, enabling lightweight and consistent
+                            application deployment.</p>
+                        <a href="mailto:robertonmanurung8@gmail.com" target="_blank" class="lrnMr-btn dload-btn">Learn
+                            More</a>
+                    </div>
+                    <div class="service-box">
+                        <!-- <i class='bx bx-sensor'></i> --><i class='bx bx-network-chart'
+                            style="width: 100%; height: auto; object-fit: cover; border-radius: 8px;"></i>
+
+                        <h3>Internet of Things</h3>
+                        <p>Expert in integrating various sensors to capture data from the physical environment and
+                            process it in real-time.
+                            Utilizing the MQTT communication protocol to ensure lightweight and efficient connectivity
+                            between IoT devices.
+                            Skilled in programming IoT devices using Arduino IDE to create functional and easily
+                            deployable systems.
+                            Using Proteus as a simulation tool to design and test hardware schematics before deployment.
+                        </p>
+                        <a href="mailto:robertonmanurung8@gmail.com" target="_blank" class="lrnMr-btn dload-btn">Learn
+                            More</a>
+                    </div>
+                    <div class="service-box">
+                        <i class='bx bxs-microchip'
+                            style="width: 100%; height: auto; object-fit: cover; border-radius: 8px;"></i>
+                        <h3>Embedded Systems</h3>
+                        <p>Proficient in designing microcontroller-based systems using Arduino and ESP32 for diverse
+                            embedded applications.
+                            Optimizing hardware performance through low-level programming for precise device control.
+                            Capable of visualizing and testing embedded systems using Proteus to ensure design stability
+                            before production.</p>
+                        <a href="https://github.com/RobertonManurung" target="_blank" class="lrnMr-btn dload-btn">Learn
+                            More</a>
+                    </div>
+                    <div class="service-box">
+                        <i class='bx bxl-html5'
+                            style="width: 100%; height: auto; object-fit: cover; border-radius: 8px;"></i>
+                        <h3>Web Programming</h3>
+                        <p>Comprehensive skills in front-end web development using HTML, CSS, and JavaScript, and
+                            back-end development with Laravel for secure and efficient data management.
+                            Skilled in using Bootstrap to design responsive user interfaces compatible with various
+                            devices.
+                            Focused on delivering a high-quality user experience (UX) while ensuring accessibility and
+                            functionality of the websites.</p>
+                        <a href="mailto:robertonmanurung8@gmail.com" target="_blank" class="lrnMr-btn dload-btn">Learn
+                            More</a>
+                    </div>
+                    <div class="service-box">
+                        <i class='bx bxs-cloud'
+                            style="width: 100%; height: auto; object-fit: cover; border-radius: 8px;"></i>
+                        <h3>Cloud Computing</h3>
+                        <p>Proficient in using Ansible for infrastructure automation, simplifying server configuration
+                            and management on a large scale.
+                            Implementing VMware to create and manage virtual environments, supporting flexible
+                            application testing and development.
+                            Understanding cloud architecture principles to design scalable and cost-effective
+                            cloud-based solutions.</p>
+                        <a href="mailto:robertonmanurung8@gmail.com" target="_blank" class="lrnMr-btn dload-btn">Learn
+                            More</a>
+                    </div>
+                </div>
+
+                <!-- <span class="animate scroll" style="--i:2;"></span> -->
+                </div>
+
+            </section>
+
+<!-- skills section -->
+<section class="skills" id="skills">
+    <h2 class="heading">My 
+        <span>Skills</span>
+        <!-- <span class="animate scroll" style="--i:1;"></span> -->
+    </h2>
+    <div class="skills-row">
+
+        <div class="skills-column">
+            <h3 class="title">Coding Skills
+                <!-- <span class="animate scroll" style="--i:2;"></span> -->
+            </h3>
+
+            <div class="skills-box">
+                <div class="skills-content">
+
+                    <div class="progress">
+                        <h3>HTML <span>80%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>CSS <span>80%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Python <span>70%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>JavaScript <span>70%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>PHP <span>80%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>laravel<span>60%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+
+                </div>
+                <!-- <span class="animate scroll" style="--i:3;"></span> -->
+            </div>
+
+        </div>
+
+        <!-- 2nd column -->
+
+        <div class="skills-column">
+            <h3 class="title">Professional Skills
+                <!-- <span class="animate scroll" style="--i:5;"></span> -->
+            </h3>
+
+            <div class="skills-box">
+                <div class="skills-content">
+
+                    <div class="progress">
+                        <h3>Solidwork<span>90%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Internet of Things<span>80%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Network Enginer <span>80%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Kubernetes <span>80%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>MQTT <span>70%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Option Trading  <span>40%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+
+                </div>
+                <!-- <span class="animate scroll" style="--i:6;"></span> -->
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- services section -->
+
+            <!-- portfolio section -->
+            <section class="portfolio" id="portfolio">
+                <h2 class="heading">Latest
+                    <span>Project</span>
+                    <!-- <span class="animate scroll" style="--i:1;"></span> -->
+                </h2>
+
+                <div class="portfolio-container">
+
+                    <div class="portfolio-box"
+                        style="width: 100%; max-width: 300px; margin: 10px; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <img src="img/dasboard ta.jpg" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Web development</h4>
+                            <p>Developed a server room monitoring system with access control, real-time temperature, smoke, and fire alerts</p>
+                            <!-- <a href="#" target="_blank"><i class='bx bx-link-external'></i></a> -->
+                        </div>
+                        <!-- <span class="animate scroll" style="--i:2;"></span> -->
+                    </div>
+                    <div class="portfolio-box"
+                        style="width: 100%; max-width: 300px; margin: 10px; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <img src="img/project/water 2.jpeg" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Water Depth Measurement Sensor</h4>
+                            <p>Electronics Engineer with sensor make automated</p>
+                            <!-- <a href="#" target="_blank"><i class='bx bx-link-external'></i></a> -->
+                        </div>
+                        <!-- <span class="animate scroll" style="--i:4;"></span> -->
+                    </div>
+                    <div class="portfolio-box"
+                        style="width: 100%; max-width: 300px; margin: 10px; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <img src="img/project/wan.jpeg" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Building a WAN Network Topology</h4>
+                            <p>Make topology use cisco packet treser and designed.
+                            </p>
+                            <!-- <a href="#" target="_blank"><i class='bx bx-link-external'></i></a> -->
+                        </div>
+                        <!-- <span class="animate scroll" style="--i:6;"></span> -->
+                    </div>
+                    <div class="portfolio-box"
+                        style="width: 100%; max-width: 300px; margin: 10px; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <img src="img/project/snake.jpeg" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Game snake</h4>
+                            <p>Making Snake Game with C Language. in sofwer engineer</p>
+                            <!-- <a href="#" target="_blank"><i class='bx bx-link-external'></i></a> -->
+                        </div>
+                        <!-- <span class="animate scroll" style="--i:8;"></span> -->
+                    </div>
+                    <div class="portfolio-box"
+                        style="width: 100%; max-width: 300px; margin: 10px; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <img src="img/project/water.jpeg" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Water Tank Depth Gauge</h4>
+                            <p>Embedded Systems Engineer with arduino mage 2560</p>
+                            <!-- <a href="#" target="_blank"><i class='bx bx-link-external'></i></a> -->
+                        </div>
+                        <!-- <span class="animate scroll" style="--i:10;"></span> -->
+                    </div>
+                    <div class="portfolio-box"
+                        style="width: 100%; max-width: 300px; margin: 10px; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <img src="img/project/produksolid.jpeg" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Product Design of an Automated Goods Sorter</h4>
+                            <p>Mechanical Designer in SolidWorks</p>
+                            <!-- <a href="#" target="_blank"><i class='bx bx-link-external'></i></a> -->
+                        </div>
+                        <!-- <span class="animate scroll" style="--i:12;"></span> -->
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- contact section -->
+            <section class="contact" id="contact">
+                <h2 class="heading">Contact
+                    <span>Me!</span>
+                    <!-- <span class="animate scroll" style="--i:1;"></span> -->
+                </h2>
+
+                <!-- <form action="success-page.html" method="post" name="contact me" data-netlify="true" netlify -->
+                <form action="#" method="post" name="contact me" data-netlify="true"
+                    netlifydata-netlify-honeypot="bot-field">
+
+                    <input class="display-none" type="text" name="bot-field">
+
+                    <div class="input-box">
+
+                        <div class="input-field">
+                            <input type="text" name="full-name:" id="full-name" placeholder="Full Name" required>
+                            <span class="focus"></span>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" name="email:" id="email" placeholder="Email Address" required>
+                            <span class="focus"></span>
+                        </div>
+                        <!-- <span class="animate scroll" style="--i:3;"></span> -->
+                        <span class="animate scroll" style="--i:1;"></span>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <div class="input-field">
+                            <input type="number" name="number:" id="number" min="1000000000" max="100000000000000"
+                                placeholder="Mobile Number" required>
+                            <span class="focus"></span>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="email-sub:" id="email-sub" placeholder="Email Subject" required>
+                            <span class="focus"></span>
+                        </div>
+                        <!-- <span class="animate scroll" style="--i:5;"></span> -->
+                        <span class="animate scroll" style="--i:1;"></span>
+
+                    </div>
+
+                    <div class="textarea-field">
+                        <textarea name="message:" id="message" cols="30" rows="10" placeholder="Your Message"
+                            required></textarea>
+                        <span class="focus"></span>
+
+                        <span class="animate scroll" style="--i:3;"></span>
+                    </div>
+                    <div class="btn-box" id="btn-boxx">
+                        <button type="submit" class="btn---" id="dload-cv">Submit</button>
+
+                        <!-- <span class="animate scroll" style="--i:9;"></span> -->
+                        <span class="animate scroll" style="--i:5;"></span>
+                    </div>
+
+
+                </form>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2023 by Developer NíL | All Rights Reserved.</p>
+
+                <span class="animate scroll" style="--i:1;"></span>
+            </div>
+
+            <div class="footer-icontotop">
+                <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+
+                <span class="animate scroll" style="--i:3;"></span>
+            </div>
+        </footer>
+    </main>
+</body>
+
+<!-- typed.js -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!-- <script src="js/smooth-scrollbar.js"></script> -->
+<script src="js/script.js"></script>
+
+</html>
